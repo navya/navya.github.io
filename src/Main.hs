@@ -9,7 +9,7 @@ module Main where
 import Hakyll
 
 main ∷ IO ()
-main = hakyll$ do
+main = hakyll $ do
   match ("images/*" .||. "js/*" .||. "favicon.ico" .||. "fonts/*") $ do
     route idRoute
     compile copyFileCompiler
@@ -30,7 +30,8 @@ main = hakyll$ do
       >>= loadAndApplyTemplate "templates/default.html" defaultContext
       >>= relativizeUrls
       >>= removeIndexHtml
-
+    -- Read templates
+  match "templates/*" $ compile $ templateCompiler
   where
     pages =
       [  "about/index.md"
