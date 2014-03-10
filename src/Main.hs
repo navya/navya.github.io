@@ -6,8 +6,6 @@
 
 module Main where
 
-import Text.Pandoc as Pandoc
-
 import Hakyll
 
 main ∷ IO ()
@@ -20,6 +18,12 @@ main = hakyll$ do
     route idRoute
     compile compressCssCompiler
 
+  match "index.html" $ do
+    route idRoute
+    compile $ pandocCompiler
+      >>= loadAndApplyTemplate "templates/default.html" defaultContext
+      >>= relativizeUrls
+      
   match (fromList pages) $ do
     route $ setExtension ".html"
     compile $ pandocCompiler
