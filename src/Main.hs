@@ -11,7 +11,7 @@ import           System.FilePath
 import           Text.Pandoc (WriterOptions(..))
 
 main ∷ IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
   match ("images/*" .||. "js/*" .||. "favicon.ico" .||. "fonts/*") $ do
     route idRoute
     compile copyFileCompiler
@@ -63,3 +63,8 @@ woptions = defaultHakyllWriterOptions{ writerSectionDivs = True,
                                        writerTemplate    = "<div id=\"text2\">About</div>\n<div id=\"text3\">Services</div>\n<div id=\"text4\">Gallery</div>\n<div id=\"text5\">Internal Wiki</div>\n<div id=\"text6\">People</div>\n<div id=\"text7\">Our Motto</div>\n<div id =\"content\">\n$body$\n</div>\n",
                                        writerHtml5       = True
                                      }
+
+config ∷ Configuration
+config = defaultConfiguration
+    { deployCommand = ""
+    }
