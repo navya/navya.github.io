@@ -1,4 +1,5 @@
 navya-website
 =============
 
-See http://students.iitk.ac.in/navya/
+[![Build Status](https://travis-ci.org/navya/navya.github.io.png)](https://travis-ci.org/navya/navya.github.io)
+
