@@ -16,7 +16,11 @@ body {
 	/* scrollbar-highlight-color:#000; */
 	/* scrollbar-shadow-color:#000 */
 }
-	  
+
+h1 {
+  font-size: 32px;
+}
+
 #outer {      				 
 	position: absolute;
 	top: 50%;
