@@ -7,6 +7,8 @@
 module Main where
 
 import           Hakyll
+import           System.FilePath
+import           Text.Pandoc (WriterOptions(..))
 
 main ∷ IO ()
 main = hakyll $ do
@@ -20,13 +22,13 @@ main = hakyll $ do
 
   match "index.html" $ do
     route idRoute
-    compile $ pandocCompiler
+    compile $ getResourceBody
       >>= loadAndApplyTemplate "templates/default.html" defaultContext
       >>= relativizeUrls
 
   match (fromList pages) $ do
-    route $ setExtension ".html"
-    compile $ pandocCompiler
+    route $ niceRoute ""
+    compile $ pandocCompilerWith defaultHakyllReaderOptions woptions
       >>= loadAndApplyTemplate "templates/default.html" defaultContext
       >>= relativizeUrls
       >>= removeIndexHtml
@@ -36,11 +38,15 @@ main = hakyll $ do
 
   where
     pages =
-      [  "about/index.md"
-      ,  "people/index.md"
-      ,  "services/index.md"
-      ,  "gallery/index.md"
+      [  "about.md"
+      ,  "people.md"
+      ,  "services.md"
+      ,  "gallery.md"
       ]
+
+niceRoute ∷ String → Routes
+niceRoute prefix = customRoute $
+                   \ident -> prefix ++ (takeBaseName . toFilePath $ ident) ++ "/index.html"
 
 removeIndexHtml ∷ Item String → Compiler (Item String)
 removeIndexHtml item = return $ fmap (withUrls removeIndexStr) item
@@ -50,5 +56,10 @@ removeIndexHtml item = return $ fmap (withUrls removeIndexStr) item
                               | otherwise = x:removeIndexStr xs
     removeIndexStr [] = []
 
-
-
+woptions ∷ WriterOptions
+woptions = defaultHakyllWriterOptions{ writerSectionDivs = True,
+                                       writerStandalone  = True,
+                                       writerColumns     = 120,
+                                       writerTemplate    = "<div id =\"content\">\n$body$\n</div>\n",
+                                       writerHtml5       = True
+                                     }
