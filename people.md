@@ -16,6 +16,7 @@ Active members currently on campus.
 - [Gopi Ramena](http://home.iitk.ac.in/~gopi/)
 - [Govind Gopakumar](https://github.com/govg): govg @ #navya
 - [Jayesh Kumar Gupta](http://rejuvyesh.com/): rejuvyesh @ #navya
+- [Peeyush Agarwal](http://home.iitk.ac.in/~peeyusha): apeeyush @ #navya
 - [Proneet Verma](https://github.com/proneetv): proneet @ #navya
 - [Rabi Shankar](https://github.com/rabisg): rabisg @ #navya
 - [Rajiv Krishna Omar](https://github.com/rajivkrishnaomar): rajivk @ #navya
