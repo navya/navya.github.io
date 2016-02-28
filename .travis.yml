@@ -1,32 +1,37 @@
 language: haskell
 branches:
   only:
-  - source
+    - source
+cache:
+  directories:
+  - $HOME/.ghc
+  - $HOME/.cabal
+  - $HOME/.stack
 install:
-- wget https://github.com/commercialhaskell/stack/releases/download/v1.0.0/stack-1.0.0-linux-x86_64.tar.gz -O stack.gz
-- tar xvf stack.gz
-- chmod +x stack-1.0.0-linux-x86_64/stack
-- stack-1.0.0-linux-x86_64/stack setup
-- stack-1.0.0-linux-x86_64/stack build
+  - wget https://github.com/commercialhaskell/stack/releases/download/v1.0.0/stack-1.0.0-linux-x86_64.tar.gz -O stack.gz
+  - tar xvf stack.gz
+  - chmod +x stack-1.0.0-linux-x86_64/stack
+  - stack-1.0.0-linux-x86_64/stack setup
+  - stack-1.0.0-linux-x86_64/stack build
 before_script:
-- git config --global user.name 'Build Bot'
-- git config --global user.email 'build@hackconf.in'
-- echo -n $id_rsa_{00..30} >> ~/.ssh/id_rsa_base64
-- base64 --decode --ignore-garbage ~/.ssh/id_rsa_base64 > ~/.ssh/id_rsa
-- chmod 600 ~/.ssh/id_rsa
-- echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-- mkdir deploy/
+  - git config --global user.name 'Build Bot'
+  - git config --global user.email 'build@hackconf.in'
+  - echo -n $id_rsa_{00..30} >> ~/.ssh/id_rsa_base64
+  - base64 --decode --ignore-garbage ~/.ssh/id_rsa_base64 > ~/.ssh/id_rsa
+  - chmod 600 ~/.ssh/id_rsa
+  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - mkdir deploy/
 script:
-- .stack-work/install/x86_64-linux/lts-2.0/7.8.4/bin/navya-website build
+  - .stack-work/install/x86_64-linux/lts-2.0/7.8.4/bin/navya-website build
 after_script:
-- cp -r _site/* deploy/
-- cd deploy/
-- git init -q
-- git checkout --orphan master -q
-- git remote add origin $REPO
-- git add --all .
-- git commit -m "generated on `date`"
-- git push origin master --force -q
+  - cp -r _site/* deploy/
+  - cd deploy/
+  - git init -q
+  - git checkout --orphan master -q
+  - git remote add origin $REPO
+  - git add --all .
+  - git commit -m "generated on `date`"
+  - git push origin master --force -q
 after_success: true
 env:
   global:
