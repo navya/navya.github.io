@@ -8,22 +8,13 @@ title: The People behind Navya
 
 Active members currently on campus.
 
-- [Abhimanyu M A](http://manyu.in/): manyu @ #navya
 - [Adarsh Jagannatha](http://hackmaster.in/blog/): adarshaj @ #navya
-- [Ankit Mahato](http://home.iitk.ac.in/~amahato/)
-- [Anshu Avinash](https://github.com/igniting): igniting @ #navya
 - [Bhanu Pratap Chaudhary](https://github.com/bhanuc)
-- [Gopi Ramena](http://home.iitk.ac.in/~gopi/)
-- [Govind Gopakumar](https://github.com/govg): govg @ #navya
-- [Jayesh Kumar Gupta](http://rejuvyesh.com/): rejuvyesh @ #navya
 - [Peeyush Agarwal](http://home.iitk.ac.in/~peeyusha): apeeyush @ #navya
 - [Proneet Verma](https://github.com/proneetv): proneet @ #navya
-- [Rabi Shankar](https://github.com/rabisg): rabisg @ #navya
-- [Rajiv Krishna Omar](https://github.com/rajivkrishnaomar): rajivk @ #navya
 - [Rohit Gupta](https://github.com/rohit-gupta)
 - [Shivanshu Agrawal](https://github.com/shivanshuag): shivanshu @ #navya
-- [Srijan R Shetty](http://home.iitk.ac.in/~srijans): srijanshetty @ #navya
-- [Vikraman Choudhary](http://vikraman.org/): vikraman @ #navya
+- [Saksham Sharma](http://acehack.org): sakshams @ #navya
 
 ## Alumni Members
 
@@ -34,5 +25,15 @@ Navya Members no longer on campus.
 - [Ford-prefect](https://github.com/ford-prefect): Ford_Prefect @ #navya
 - [Nirbheek Chauhan](http://nirbheek.in)
 - [Praneeth](http://blog.lifeeth.in/)
+- [Ankit Mahato](http://home.iitk.ac.in/~amahato/)
+- [Anshu Avinash](https://github.com/igniting): igniting @ #navya
+- [Gopi Ramena](http://home.iitk.ac.in/~gopi/)
+- [Govind Gopakumar](https://github.com/govg): govg @ #navya
+- [Jayesh Kumar Gupta](http://rejuvyesh.com/): rejuvyesh @ #navya
+- [Rajiv Krishna Omar](https://github.com/rajivkrishnaomar): rajivk @ #navya
+- [Srijan R Shetty](http://home.iitk.ac.in/~srijans): srijanshetty @ #navya
+- [Vikraman Choudhary](http://vikraman.org/): vikraman @ #navya
+- [Abhimanyu M A](http://manyu.in/): manyu @ #navya
+- [Rabi Shankar](https://github.com/rabisg): rabisg @ #navya
 
 ## Annnnd.. numerous others
