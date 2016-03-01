@@ -14,7 +14,8 @@ Active members currently on campus.
 - [Proneet Verma](https://github.com/proneetv): proneet @ #navya
 - [Rohit Gupta](https://github.com/rohit-gupta)
 - [Shivanshu Agrawal](https://github.com/shivanshuag): shivanshu @ #navya
-- [Saksham Sharma](http://acehack.org): sakshams @ #navya
+- [Saksham Sharma](http://acehack.org): saksham @ #navya
+- [Pallav Agarwal](http://varstack.com): pallav @ #navya
 
 ## Alumni Members
 
