@@ -8,6 +8,12 @@ title: The People behind Navya
 
 Active members currently on campus.
 
+- [Som Tambe](https://github.com/SomTambe): TheSithLord27 @ #pclubiitk (discord)
+
+## Alumni Members
+
+Navya Members no longer on campus.
+
 - [Adarsh Jagannatha](http://hackmaster.in/blog/): adarshaj @ #navya
 - [Bhanu Pratap Chaudhary](https://github.com/bhanuc)
 - [Peeyush Agarwal](http://home.iitk.ac.in/~peeyusha): apeeyush @ #navya
@@ -16,11 +22,6 @@ Active members currently on campus.
 - [Shivanshu Agrawal](https://github.com/shivanshuag): shivanshu @ #navya
 - [Saksham Sharma](http://acehack.org): saksham @ #navya
 - [Pallav Agarwal](http://varstack.com): pallav @ #navya
-
-## Alumni Members
-
-Navya Members no longer on campus.
-
 - [Aritra Saha](http://www.cse.iitk.ac.in/users/aritra)
 - [Devilsadvocate](https://github.com/devilsadvocate)
 - [Ford-prefect](https://github.com/ford-prefect): Ford_Prefect @ #navya
